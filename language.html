@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexari Language Guide - Complete Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Phoenician&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/documentation.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <h1 class="logo">Nexari<span class="ai-badge">AI</span></h1>
+                </div>
+                <div class="nav-right">
+                    <button id="homeBtn" class="nav-btn">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                        Home
+                    </button>
+                    <button id="languageBtn" class="nav-btn active">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="m2 17 10 5 10-5"/>
+                            <path d="m2 12 10 5 10-5"/>
+                        </svg>
+                        Explore the Language
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Documentation Content -->
+        <main class="documentation-content">
+            <div class="doc-header">
+                <h1 class="doc-title">The Zerava Script Language</h1>
+                <p class="doc-subtitle">A Complete Guide to the Neural-Inspired Constructed Language with Unicode Script</p>
+            </div>
+
+            <div class="doc-container">
+                <!-- Table of Contents -->
+                <aside class="toc-sidebar">
+                    <div class="toc-content">
+                        <h3>Table of Contents</h3>
+                        <ul class="toc-list">
+                            <li><a href="#introduction">Introduction</a></li>
+                            <li><a href="#phonology">Phonology & Pronunciation</a></li>
+                            <li><a href="#grammar">Grammar System</a></li>
+                            <li><a href="#tenses">Tense System</a></li>
+                            <li><a href="#vocabulary">Vocabulary</a></li>
+                            <li><a href="#sentence-structure">Sentence Structure</a></li>
+                            <li><a href="#examples">Example Sentences</a></li>
+                            <li><a href="#learning">Learning Resources</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Main Documentation -->
+                <article class="doc-main">
+                    <!-- Introduction Section -->
+                    <section id="introduction" class="doc-section">
+                        <h2 class="section-title">Introduction to Zerava Script</h2>
+                        <div class="section-content">
+                            <p>Zerava is a minimalist constructed language (conlang) designed for clarity, simplicity, and AI-assisted learning. Written in beautiful Unicode script symbols (𐔓𐔂𐔋 style), Zerava features a logical structure that makes it easy to learn and translate while maintaining visual distinctiveness.</p>
+                            
+                            <div class="feature-grid">
+                                <div class="feature-card">
+                                    <h4>🧠 Neural-Inspired</h4>
+                                    <p>Designed with AI processing efficiency in mind</p>
+                                </div>
+                                <div class="feature-card">
+                                    <h4>📝 Minimal Grammar</h4>
+                                    <p>Simple rules with consistent patterns</p>
+                                </div>
+                                <div class="feature-card">
+                                    <h4>🔄 Logical Structure</h4>
+                                    <p>Predictable word formation and syntax</p>
+                                </div>
+                                <div class="feature-card">
+                                    <h4>⚡ Fast Learning</h4>
+                                    <p>Designed for rapid comprehension</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Phonology Section -->
+                    <section id="phonology" class="doc-section">
+                        <h2 class="section-title">Phonology & Pronunciation</h2>
+                        <div class="section-content">
+                            <p>Nexari uses a simplified phonetic system based on common sounds found across world languages.</p>
+                            
+                            <div class="phonology-grid">
+                                <div class="phonology-card">
+                                    <h4>Consonants</h4>
+                                    <ul>
+                                        <li><strong>z, v, k, x, n, l, m, d, r, t, q, w, f, h</strong></li>
+                                        <li>Pronounced as in English</li>
+                                        <li>No difficult sounds or clusters</li>
+                                    </ul>
+                                </div>
+                                <div class="phonology-card">
+                                    <h4>Vowels</h4>
+                                    <ul>
+                                        <li><strong>a, e, i, o, u, y</strong></li>
+                                        <li>Clear, distinct sounds</li>
+                                        <li>Similar to Spanish/Italian pronunciation</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="pronunciation-examples">
+                                <h4>Script Examples</h4>
+                                <div class="examples-grid">
+                                    <div class="example-item">
+                                        <span class="nexari">𐔀𐔋</span>
+                                        <span class="pronunciation">[zeth]</span>
+                                        <span class="meaning">I</span>
+                                    </div>
+                                    <div class="example-item">
+                                        <span class="nexari">𐔏𐔒</span>
+                                        <span class="pronunciation">[lyx]</span>
+                                        <span class="meaning">love</span>
+                                    </div>
+                                    <div class="example-item">
+                                        <span class="nexari">𐔊𐔃</span>
+                                        <span class="pronunciation">[vor]</span>
+                                        <span class="meaning">water</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Grammar Section -->
+                    <section id="grammar" class="doc-section">
+                        <h2 class="section-title">Grammar System</h2>
+                        <div class="section-content">
+                            <p>Nexari follows a <strong>Subject-Verb-Object (SVO)</strong> word order, similar to English. The grammar is designed to be minimal yet expressive.</p>
+
+                            <div class="grammar-rules">
+                                <h4>Core Grammar Rules</h4>
+                                <ol>
+                                    <li><strong>No Articles:</strong> Nexari doesn't use "the," "a," or "an"</li>
+                                    <li><strong>No Gender:</strong> Nouns and adjectives are gender-neutral</li>
+                                    <li><strong>No Cases:</strong> Word endings don't change based on grammatical role</li>
+                                    <li><strong>Minimal Inflection:</strong> Verbs change only for tense, not person</li>
+                                    <li><strong>Consistent Word Order:</strong> Always Subject-Verb-Object</li>
+                                </ol>
+                            </div>
+
+                            <div class="word-types">
+                                <h4>Word Types</h4>
+                                <div class="word-type-grid">
+                                    <div class="word-type-card">
+                                        <h5>Pronouns</h5>
+                                        <p>zeth (I), yul (you), kex (he/she/it)</p>
+                                    </div>
+                                    <div class="word-type-card">
+                                        <h5>Verbs</h5>
+                                        <p>Action words with tense markers</p>
+                                    </div>
+                                    <div class="word-type-card">
+                                        <h5>Nouns</h5>
+                                        <p>People, places, things, concepts</p>
+                                    </div>
+                                    <div class="word-type-card">
+                                        <h5>Adjectives</h5>
+                                        <p>Descriptive words, follow nouns</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Tenses Section -->
+                    <section id="tenses" class="doc-section">
+                        <h2 class="section-title">Tense System</h2>
+                        <div class="section-content">
+                            <p>Nexari has a simple but complete tense system. Tenses are formed by adding prefixes or suffixes to verb roots.</p>
+
+                            <div class="tense-grid">
+                                <div class="tense-card">
+                                    <h4>Present Tense</h4>
+                                    <div class="tense-info">
+                                        <p><strong>Formation:</strong> Base verb (no changes)</p>
+                                        <p><strong>Example:</strong> <code>𐔀𐔋 𐔏𐔂</code> = "I see"</p>
+                                        <p><strong>Usage:</strong> Current actions, general truths</p>
+                                    </div>
+                                </div>
+
+                                <div class="tense-card">
+                                    <h4>Past Tense</h4>
+                                    <div class="tense-info">
+                                        <p><strong>Formation:</strong> Add <code>→ed</code> marker</p>
+                                        <p><strong>Example:</strong> <code>𐔀𐔋 𐔏𐔂→ed</code> = "I saw"</p>
+                                        <p><strong>Usage:</strong> Completed past actions</p>
+                                    </div>
+                                </div>
+
+                                <div class="tense-card">
+                                    <h4>Future Tense</h4>
+                                    <div class="tense-info">
+                                        <p><strong>Formation:</strong> Add <code>→wil</code> marker</p>
+                                        <p><strong>Example:</strong> <code>𐔀𐔋 𐔏𐔂→wil</code> = "I will see"</p>
+                                        <p><strong>Usage:</strong> Future actions, intentions</p>
+                                    </div>
+                                </div>
+
+                                <div class="tense-card">
+                                    <h4>Continuous</h4>
+                                    <div class="tense-info">
+                                        <p><strong>Formation:</strong> Add <code>-ing</code> suffix</p>
+                                        <p><strong>Example:</strong> <code>zeth vok-ing</code> = "I am seeing"</p>
+                                        <p><strong>Usage:</strong> Ongoing actions</p>
+                                    </div>
+                                </div>
+
+                                <div class="tense-card">
+                                    <h4>Perfect</h4>
+                                    <div class="tense-info">
+                                        <p><strong>Formation:</strong> Add <code>hav-</code> prefix</p>
+                                        <p><strong>Example:</strong> <code>zeth hav-vok</code> = "I have seen"</p>
+                                        <p><strong>Usage:</strong> Completed actions with present relevance</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tense-examples">
+                                <h4>Tense Examples in Context</h4>
+                                <div class="context-examples">
+                                    <div class="context-example">
+                                        <div class="nexari-sentence">𐔀𐔋 𐔏𐔒 𐔎𐔂</div>
+                                        <div class="english-sentence">I love you (present)</div>
+                                    </div>
+                                    <div class="context-example">
+                                        <div class="nexari-sentence">𐔀𐔋 𐔏𐔒→ed 𐔎𐔂</div>
+                                        <div class="english-sentence">I loved you (past)</div>
+                                    </div>
+                                    <div class="context-example">
+                                        <div class="nexari-sentence">𐔀𐔋 𐔏𐔒→wil 𐔎𐔂</div>
+                                        <div class="english-sentence">I will love you (future)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Vocabulary Section -->
+                    <section id="vocabulary" class="doc-section">
+                        <h2 class="section-title">Core Vocabulary</h2>
+                        <div class="section-content">
+                            <p>Nexari's vocabulary is built around essential concepts and common words. Here are the main categories:</p>
+
+                            <div class="vocab-categories">
+                                <div class="vocab-category">
+                                    <h4>Pronouns</h4>
+                                    <div class="vocab-list">
+                                        <span class="vocab-item">𐔀𐔋 = I</span>
+                                        <span class="vocab-item">𐔎𐔂 = you</span>
+                                        <span class="vocab-item">𐔋𐔄𐔑 = he/she/it</span>
+                                        <span class="vocab-item">𐔑𐔑𐔂 = we</span>
+                                        <span class="vocab-item">𐔒𐔓𐔑 = you (plural)</span>
+                                        <span class="vocab-item">𐔓𐔒𐔑 = they</span>
+                                    </div>
+                                </div>
+
+                                <div class="vocab-category">
+                                    <h4>Essential Verbs</h4>
+                                    <div class="vocab-list">
+                                        <span class="vocab-item">𐔍𐔉 = am/is/are</span>
+                                        <span class="vocab-item">𐔏𐔂 = see</span>
+                                        <span class="vocab-item">𐔏𐔒 = love</span>
+                                        <span class="vocab-item">𐔍𐔂 = go</span>
+                                        <span class="vocab-item">𐔑𐔄 = come</span>
+                                        <span class="vocab-item">𐔍𐔒 = want</span>
+                                        <span class="vocab-item">𐔒𐔉𐔂 = have</span>
+                                        <span class="vocab-item">𐔎𐔉 = speak</span>
+                                    </div>
+                                </div>
+
+                                <div class="vocab-category">
+                                    <h4>Common Nouns</h4>
+                                    <div class="vocab-list">
+                                        <span class="vocab-item">𐔐𐔑𐔏 = world</span>
+                                        <span class="vocab-item">𐔊𐔃 = water</span>
+                                        <span class="vocab-item">𐔎𐔂𐔓 = light</span>
+                                        <span class="vocab-item">𐔀𐔑𐔃 = time</span>
+                                        <span class="vocab-item">𐔄𐔑 = home</span>
+                                        <span class="vocab-item">𐔀𐔑 = friend</span>
+                                        <span class="vocab-item">𐔒𐔒 = peace</span>
+                                        <span class="vocab-item">𐔏𐔒 = love</span>
+                                    </div>
+                                </div>
+
+                                <div class="vocab-category">
+                                    <h4>Numbers</h4>
+                                    <div class="vocab-list">
+                                        <span class="vocab-item">𐔃𐔁 = zero</span>
+                                        <span class="vocab-item">𐔀𐔀 = one</span>
+                                        <span class="vocab-item">𐔁𐔀 = two</span>
+                                        <span class="vocab-item">𐔂𐔀 = three</span>
+                                        <span class="vocab-item">𐔃𐔀 = four</span>
+                                        <span class="vocab-item">𐔄𐔀 = five</span>
+                                        <span class="vocab-item">𐔉𐔀 = ten</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sentence Structure Section -->
+                    <section id="sentence-structure" class="doc-section">
+                        <h2 class="section-title">Sentence Structure</h2>
+                        <div class="section-content">
+                            <p>Nexari follows a consistent <strong>Subject-Verb-Object (SVO)</strong> structure with optional modifiers.</p>
+
+                            <div class="structure-pattern">
+                                <h4>Basic Pattern</h4>
+                                <div class="pattern-display">
+                                    <span class="pattern-element subject">Subject</span>
+                                    <span class="pattern-arrow">→</span>
+                                    <span class="pattern-element verb">Verb</span>
+                                    <span class="pattern-arrow">→</span>
+                                    <span class="pattern-element object">Object</span>
+                                </div>
+                            </div>
+
+                            <div class="structure-examples">
+                                <h4>Structure Examples</h4>
+                                <div class="structure-grid">
+                                    <div class="structure-card">
+                                        <h5>Simple Statement</h5>
+                                        <div class="structure-breakdown">
+                                            <span class="subject">𐔀𐔋</span>
+                                            <span class="verb">𐔏𐔒</span>
+                                            <span class="object">𐔎𐔂</span>
+                                        </div>
+                                        <p class="translation">I love you</p>
+                                    </div>
+
+                                    <div class="structure-card">
+                                        <h5>With Adjective</h5>
+                                        <div class="structure-breakdown">
+                                            <span class="subject">𐔊𐔃</span>
+                                            <span class="verb">𐔍𐔉</span>
+                                            <span class="object adjective">𐔎𐔄</span>
+                                        </div>
+                                        <p class="translation">Water is blue</p>
+                                    </div>
+
+                                    <div class="structure-card">
+                                        <h5>Past Tense</h5>
+                                        <div class="structure-breakdown">
+                                            <span class="subject">𐔋𐔄𐔑</span>
+                                            <span class="verb">𐔑𐔄→ed</span>
+                                            <span class="object">𐔄𐔑</span>
+                                        </div>
+                                        <p class="translation">He/she came home</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Examples Section -->
+                    <section id="examples" class="doc-section">
+                        <h2 class="section-title">Example Sentences</h2>
+                        <div class="section-content">
+                            <p>Here are practical examples showing Nexari in context:</p>
+
+                            <div class="examples-container">
+                                <div class="example-category">
+                                    <h4>Daily Conversations</h4>
+                                    <div class="sentence-examples">
+                                        <div class="sentence-pair">
+                                            <div class="nexari">zeth lyx yul</div>
+                                            <div class="english">I love you</div>
+                                        </div>
+                                        <div class="sentence-pair">
+                                            <div class="nexari">yul vok lum</div>
+                                            <div class="english">You see light</div>
+                                        </div>
+                                        <div class="sentence-pair">
+                                            <div class="nexari">zev nal dol</div>
+                                            <div class="english">We go home</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="example-category">
+                                    <h4>Past and Future</h4>
+                                    <div class="sentence-examples">
+                                        <div class="sentence-pair">
+                                            <div class="nexari">zeth kam-ed dal</div>
+                                            <div class="english">I came to the world</div>
+                                        </div>
+                                        <div class="sentence-pair">
+                                            <div class="nexari">yul wil-vok sun</div>
+                                            <div class="english">You will see the sun</div>
+                                        </div>
+                                        <div class="sentence-pair">
+                                            <div class="nexari">kex hav-rex vel</div>
+                                            <div class="english">He/she has had love</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="example-category">
+                                    <h4>Complex Sentences</h4>
+                                    <div class="sentence-examples">
+                                        <div class="sentence-pair">
+                                            <div class="nexari">sun lum dal gon</div>
+                                            <div class="english">Sun lights the good world</div>
+                                        </div>
+                                        <div class="sentence-pair">
+                                            <div class="nexari">zeth rex ven new</div>
+                                            <div class="english">I have a new friend</div>
+                                        </div>
+                                        <div class="sentence-pair">
+                                            <div class="nexari">vor blu tem lum</div>
+                                            <div class="english">Blue water is bright</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Learning Resources Section -->
+                    <section id="learning" class="doc-section">
+                        <h2 class="section-title">Learning Resources</h2>
+                        <div class="section-content">
+                            <div class="learning-tips">
+                                <h4>Tips for Learning Nexari</h4>
+                                <ol>
+                                    <li><strong>Start with pronouns and basic verbs</strong> - Master zeth, yul, kex and tem, vok, lyx</li>
+                                    <li><strong>Practice the SVO pattern</strong> - Always Subject-Verb-Object</li>
+                                    <li><strong>Learn tense markers</strong> - -ed (past), wil- (future), -ing (continuous)</li>
+                                    <li><strong>Build vocabulary gradually</strong> - Focus on common words first</li>
+                                    <li><strong>Use the translator regularly</strong> - Practice with the AI-powered tool</li>
+                                </ol>
+                            </div>
+
+                            <div class="learning-exercises">
+                                <h4>Practice Exercises</h4>
+                                <div class="exercise-grid">
+                                    <div class="exercise-card">
+                                        <h5>Basic Translation</h5>
+                                        <p>Try translating: "I see water"</p>
+                                        <details>
+                                            <summary>Show Answer</summary>
+                                            <p><code>zeth vok vor</code></p>
+                                        </details>
+                                    </div>
+                                    <div class="exercise-card">
+                                        <h5>Past Tense</h5>
+                                        <p>Try translating: "You came home"</p>
+                                        <details>
+                                            <summary>Show Answer</summary>
+                                            <p><code>yul kam-ed dol</code></p>
+                                        </details>
+                                    </div>
+                                    <div class="exercise-card">
+                                        <h5>Future Tense</h5>
+                                        <p>Try translating: "We will have peace"</p>
+                                        <details>
+                                            <summary>Show Answer</summary>
+                                            <p><code>zev wil-rex pax</code></p>
+                                        </details>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="try-translator">
+                                <h4>Ready to Practice?</h4>
+                                <p>Use our AI-powered translator to practice Nexari in real-time!</p>
+                                <button class="cta-button" onclick="window.location.href='index.html'">
+                                    Try the Translator
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Nexari Language Documentation. Created for educational purposes.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Navigation functionality
+        document.getElementById('homeBtn').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+
+        // Smooth scrolling for table of contents
+        document.querySelectorAll('.toc-list a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Highlight current section in TOC
+        const sections = document.querySelectorAll('.doc-section');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+
+        function updateTOC() {
+            const scrollTop = window.pageYOffset;
+            
+            sections.forEach((section, index) => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
+                    tocLinks.forEach(link => link.classList.remove('active'));
+                    tocLinks[index]?.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateTOC);
+        updateTOC(); // Initial call
+    </script>
+</body>
+</html>
