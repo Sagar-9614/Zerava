@@ -1,0 +1,815 @@
+/* Documentation-specific styles */
+
+/* Documentation Layout */
+.documentation-content {
+    padding: 2rem 0;
+}
+
+.doc-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.doc-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #60a5fa, #a78bfa, #06b6d4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.doc-subtitle {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    font-weight: 400;
+}
+
+.doc-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Table of Contents Sidebar */
+.toc-sidebar {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+
+.toc-content {
+    background: rgba(15, 15, 35, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.toc-content h3 {
+    color: #e2e8f0;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.toc-list {
+    list-style: none;
+}
+
+.toc-list li {
+    margin-bottom: 0.5rem;
+}
+
+.toc-list a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+}
+
+.toc-list a:hover,
+.toc-list a.active {
+    color: #60a5fa;
+    background: rgba(96, 165, 250, 0.1);
+}
+
+/* Main Documentation Content */
+.doc-main {
+    min-height: 100vh;
+}
+
+.doc-section {
+    margin-bottom: 4rem;
+    scroll-margin-top: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(45deg, #60a5fa, #a78bfa);
+    border-radius: 2px;
+}
+
+.section-content {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+.section-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.feature-card {
+    background: rgba(15, 15, 35, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    background: rgba(96, 165, 250, 0.05);
+    border-color: rgba(96, 165, 250, 0.2);
+    transform: translateY(-2px);
+}
+
+.feature-card h4 {
+    color: #e2e8f0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Phonology Section */
+.phonology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.phonology-card {
+    background: rgba(15, 15, 35, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.phonology-card h4 {
+    color: #60a5fa;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.phonology-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.phonology-card li {
+    margin-bottom: 0.75rem;
+    color: #cbd5e1;
+}
+
+.phonology-card li strong {
+    color: #a78bfa;
+    font-family: 'Courier New', monospace;
+}
+
+.pronunciation-examples {
+    margin: 2rem 0;
+}
+
+.pronunciation-examples h4 {
+    color: #e2e8f0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.example-item {
+    background: rgba(15, 15, 35, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.example-item .nexari {
+    display: block;
+    color: #a78bfa;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.example-item .pronunciation {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 0.25rem;
+}
+
+.example-item .meaning {
+    display: block;
+    color: #06b6d4;
+    font-size: 0.9rem;
+}
+
+/* Grammar Section */
+.grammar-rules {
+    margin: 2rem 0;
+}
+
+.grammar-rules h4 {
+    color: #e2e8f0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.grammar-rules ol {
+    color: #cbd5e1;
+    padding-left: 2rem;
+}
+
+.grammar-rules li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.grammar-rules li strong {
+    color: #60a5fa;
+}
+
+.word-types {
+    margin: 2rem 0;
+}
+
+.word-type-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.word-type-card {
+    background: rgba(15, 15, 35, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.word-type-card h5 {
+    color: #a78bfa;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.word-type-card p {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Tense Section */
+.tense-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.tense-card {
+    background: rgba(15, 15, 35, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.tense-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #60a5fa, #a78bfa, #06b6d4);
+}
+
+.tense-card h4 {
+    color: #e2e8f0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.tense-info p {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.tense-info strong {
+    color: #60a5fa;
+}
+
+.tense-info code {
+    background: rgba(167, 139, 250, 0.2);
+    color: #a78bfa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.tense-examples {
+    margin: 3rem 0;
+}
+
+.tense-examples h4 {
+    color: #e2e8f0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.context-examples {
+    display: grid;
+    gap: 1rem;
+}
+
+.context-example {
+    background: rgba(15, 15, 35, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.nexari-sentence {
+    color: #a78bfa;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.english-sentence {
+    color: #06b6d4;
+    font-size: 0.95rem;
+}
+
+/* Vocabulary Section */
+.vocab-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.vocab-category {
+    background: rgba(15, 15, 35, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.vocab-category h4 {
+    color: #60a5fa;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.vocab-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.vocab-item {
+    background: rgba(15, 15, 35, 0.6);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    font-family: 'Courier New', monospace;
+}
+
+/* Sentence Structure Section */
+.structure-pattern {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.structure-pattern h4 {
+    color: #e2e8f0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.pattern-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    background: rgba(15, 15, 35, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+.pattern-element {
+    background: linear-gradient(45deg, #60a5fa, #a78bfa);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.pattern-arrow {
+    color: #94a3b8;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.structure-examples {
+    margin: 2rem 0;
+}
+
+.structure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.structure-card {
+    background: rgba(15, 15, 35, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.structure-card h5 {
+    color: #60a5fa;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.structure-breakdown {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.structure-breakdown span {
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.subject {
+    background: rgba(96, 165, 250, 0.2);
+    color: #60a5fa;
+}
+
+.verb {
+    background: rgba(167, 139, 250, 0.2);
+    color: #a78bfa;
+}
+
+.object {
+    background: rgba(6, 182, 212, 0.2);
+    color: #06b6d4;
+}
+
+.adjective {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.translation {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Examples Section */
+.examples-container {
+    margin: 2rem 0;
+}
+
+.example-category {
+    margin-bottom: 3rem;
+}
+
+.example-category h4 {
+    color: #60a5fa;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.sentence-examples {
+    display: grid;
+    gap: 1rem;
+}
+
+.sentence-pair {
+    background: rgba(15, 15, 35, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sentence-pair .nexari {
+    color: #a78bfa;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: right;
+    padding-right: 1rem;
+    border-right: 2px solid rgba(167, 139, 250, 0.3);
+}
+
+.sentence-pair .english {
+    color: #06b6d4;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+/* Learning Section */
+.learning-tips {
+    margin: 2rem 0;
+}
+
+.learning-tips h4 {
+    color: #e2e8f0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.learning-tips ol {
+    color: #cbd5e1;
+    padding-left: 2rem;
+    line-height: 1.8;
+}
+
+.learning-tips li {
+    margin-bottom: 1rem;
+}
+
+.learning-tips li strong {
+    color: #60a5fa;
+}
+
+.learning-exercises {
+    margin: 3rem 0;
+}
+
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.exercise-card {
+    background: rgba(15, 15, 35, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.exercise-card h5 {
+    color: #a78bfa;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.exercise-card p {
+    color: #cbd5e1;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.exercise-card details {
+    margin-top: 1rem;
+}
+
+.exercise-card summary {
+    color: #60a5fa;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.exercise-card details p {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+.exercise-card code {
+    background: rgba(167, 139, 250, 0.2);
+    color: #a78bfa;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+.try-translator {
+    background: rgba(15, 15, 35, 0.6);
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.try-translator h4 {
+    color: #e2e8f0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.try-translator p {
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #8b5cf6, #06b6d4);
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .doc-container {
+        grid-template-columns: 240px 1fr;
+        gap: 2rem;
+    }
+    
+    .doc-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .doc-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .toc-sidebar {
+        position: static;
+        order: 2;
+    }
+    
+    .doc-main {
+        order: 1;
+    }
+    
+    .doc-title {
+        font-size: 2rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .phonology-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tense-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .vocab-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .structure-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .exercise-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sentence-pair {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .sentence-pair .nexari {
+        text-align: center;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 2px solid rgba(167, 139, 250, 0.3);
+        padding-bottom: 0.5rem;
+    }
+    
+    .sentence-pair .english {
+        padding-left: 0;
+        padding-top: 0.5rem;
+    }
+    
+    .pattern-display {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .pattern-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .documentation-content {
+        padding: 1rem 0;
+    }
+    
+    .doc-title {
+        font-size: 1.75rem;
+    }
+    
+    .doc-subtitle {
+        font-size: 1rem;
+    }
+    
+    .pattern-element {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .structure-breakdown {
+        gap: 0.25rem;
+    }
+    
+    .structure-breakdown span {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}
